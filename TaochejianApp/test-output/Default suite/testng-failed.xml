@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.taochejian.util.TestCar">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testAccountLogin1"/>
+          <include name="testAccountLogin"/>
+        </methods>
+      </class> <!-- com.taochejian.util.TestCar -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
