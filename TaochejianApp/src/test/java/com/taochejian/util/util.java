@@ -23,7 +23,7 @@ public class util{
 		Date dt = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddhhmmss");
 		File screen = driver.getScreenshotAs(OutputType.FILE);
-		File screenFile = new File("D:\\screen\\" + sdf.format(dt) + ".png");
+		File screenFile = new File("E:\\screen\\" + sdf.format(dt) + ".png");
 		try {
 			FileUtils.copyFile(screen, screenFile);
 		} catch (IOException e) {
