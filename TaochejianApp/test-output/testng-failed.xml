@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="Test">
     <classes>
-      <class name="com.taochejian.util.TestCar">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="pushTencen"/>
-        </methods>
-      </class> <!-- com.taochejian.util.TestCar -->
+      <class name="com.taochejian.util.TestCar"/>
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test -->
 </suite> <!-- Failed suite [Suite] -->

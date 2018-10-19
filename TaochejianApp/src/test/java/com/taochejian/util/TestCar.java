@@ -16,7 +16,8 @@ public class TestCar extends TestBase{
 	  
 	
 	//自动dk
-	  @Test()
+	  @SuppressWarnings("deprecation")
+	@Test()
 	  public void pushTencen() throws Exception{
 		  util.sleep(5);
 		  driver.findElement(By.id("com.tencent.wework:id/c6w")).click();
@@ -30,19 +31,20 @@ public class TestCar extends TestBase{
 		  driver.findElement(By.xpath("//*[contains(@text, '请填写密码')]")).sendKeys("hxm_154321!@#");
 		  util.sleep(1);
 		  driver.findElement(By.id("com.tencent.mm:id/ch6")).click();
-		  util.sleep(5);
+		  util.sleep(10);
 		 //*****************
 		  driver.findElement(By.xpath("//*[contains(@text, '好车酷酷')]")).click();
 		  log.info("选则好车酷酷");
-		  util.sleep(2);
+		  util.sleep(3);
 		  driver.findElement(By.id("com.tencent.wework:id/d80")).click();
 		  log.info("点击进入企业");
-		  util.sleep(8);
+		  util.sleep(10);
 		  driver.tap(1, 910, 1800, 1);
 		  log.info("点击系统弹出的允许访问通讯录");
-		  driver.tap(1, 700, 1800, 1);
+		  util.sleep(6);
+		  driver.tap(1, 800, 1800, 1);
 		  log.info("点击进入工作台");
-		  util.sleep(2);
+		  util.sleep(5);
 		  driver.tap(1, 280, 1650, 1);
 		  log.info("点击我的考勤");
 		  util.sleep(2);
