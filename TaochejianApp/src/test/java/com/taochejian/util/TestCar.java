@@ -20,7 +20,7 @@ public class TestCar extends TestBase{
 	@Test()
 	  public void pushTencen() throws Exception{
 		  util.sleep(5);
-		  driver.findElement(By.id("com.tencent.wework:id/c6w")).click();
+		  driver.findElement(By.xpath("//*[contains(@text, '微信登录')]")).click();
 		  log.info("点击微信登录");
 		  util.sleep(5);
 		  
@@ -37,25 +37,26 @@ public class TestCar extends TestBase{
 		  driver.findElement(By.xpath("//*[contains(@text, '好车酷酷')]")).click();
 		  log.info("选则好车酷酷");
 		  util.sleep(3);
-		  driver.findElement(By.id("com.tencent.wework:id/d80")).click();
+		  driver.findElement(By.xpath("//*[contains(@text, '进入企业')]")).click();
 		  log.info("点击进入企业");
 		  util.sleep(10);
 		  driver.tap(1, 910, 1800, 1);
 		  log.info("点击系统弹出的允许访问通讯录");
 		  util.sleep(6);
-		  driver.tap(1, 800, 1800, 1);
+		 
+		  driver.tap(1, 800, 1900, 1);
 		  log.info("点击进入工作台");
-		  util.sleep(5);
+		  util.sleep(10);
 		  driver.tap(1, 280, 1650, 1);
 		  log.info("点击我的考勤");
 		  util.sleep(2);
-		  driver.findElement(By.id("com.tencent.wework:id/c8s")).click();
+		  driver.findElement(By.xpath("//*[contains(@text, '考勤打卡')]")).click();
 		  log.info("点击考勤打卡");
 		  util.sleep(4);
 		  
-		  if(util.isElementExist(driver, By.id("com.tencent.wework:id/b20")) == true){
+		  if(util.isElementExist(driver, By.id("com.tencent.wework:id/b2v")) == true){
 			  log.info("点击允许获取地理位置");
-			  driver.findElement(By.id("com.tencent.wework:id/b20")).click();
+			  driver.findElement(By.id("com.tencent.wework:id/b2v")).click();
 			  util.sleep(8);
 		  }
 //		  driver.findElement(By.id("com.tencent.wework:id/b20")).click();
