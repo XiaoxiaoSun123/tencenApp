@@ -23,6 +23,7 @@ public class TestCar extends TestBase{
 		  driver.findElement(By.id("com.tencent.wework:id/c6w")).click();
 		  log.info("点击微信登录");
 		  util.sleep(5);
+		  
 		  /*
 		   * 获取微信登录
 		   */
@@ -51,6 +52,7 @@ public class TestCar extends TestBase{
 		  driver.findElement(By.id("com.tencent.wework:id/c8s")).click();
 		  log.info("点击考勤打卡");
 		  util.sleep(4);
+		  
 		  if(util.isElementExist(driver, By.id("com.tencent.wework:id/b20")) == true){
 			  log.info("点击允许获取地理位置");
 			  driver.findElement(By.id("com.tencent.wework:id/b20")).click();
@@ -63,8 +65,7 @@ public class TestCar extends TestBase{
 		  log.info("点击系统弹出的允许获取地理位置");
 		  util.sleep(8);
 		  driver.tap(1, 150, 1850, 1); 
-		  util.sleep(1);
-		  
+		  util.sleep(1);	  
 		  //##############33
 		  String tpath = "E:/screen/" + util.screenshot(driver) + ".png";
 		  util.sleep(1);	
