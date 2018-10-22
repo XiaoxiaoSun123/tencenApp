@@ -10,7 +10,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -98,4 +101,19 @@ public class util{
 			Thread.sleep((int)d);
 		} catch(Exception e) {}
 	}
+	
+	
+	/** 
+	 * 判断元素是否存在
+     * @param driver
+     * @return true or false
+     */
+	public static boolean isElementExist(AndroidDriver driver, By by) { 
+        try { 
+            driver.findElement(by);
+            return true; 
+        } catch(NoSuchElementException e) { 
+            return false; 
+        } 
+    }
 }

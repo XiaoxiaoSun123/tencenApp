@@ -50,10 +50,15 @@ public class TestCar extends TestBase{
 		  util.sleep(2);
 		  driver.findElement(By.id("com.tencent.wework:id/c8s")).click();
 		  log.info("点击考勤打卡");
-		  util.sleep(2);
-		  driver.findElement(By.id("com.tencent.wework:id/b20")).click();
-		  log.info("点击允许获取地理位置");
-		  util.sleep(8);
+		  util.sleep(4);
+		  if(util.isElementExist(driver, By.id("com.tencent.wework:id/b20")) == true){
+			  log.info("点击允许获取地理位置");
+			  driver.findElement(By.id("com.tencent.wework:id/b20")).click();
+			  util.sleep(8);
+		  }
+//		  driver.findElement(By.id("com.tencent.wework:id/b20")).click();
+//		  log.info("点击允许获取地理位置");
+//		  util.sleep(8);
 		  driver.tap(1, 910, 1800, 1);
 		  log.info("点击系统弹出的允许获取地理位置");
 		  util.sleep(8);

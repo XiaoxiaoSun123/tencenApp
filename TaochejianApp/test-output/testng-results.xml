@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="110415" started-at="2018-10-19T09:49:09Z" finished-at="2018-10-19T09:51:00Z">
+  <suite name="Suite" duration-ms="109858" started-at="2018-10-22T02:01:37Z" finished-at="2018-10-22T02:03:27Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="110415" started-at="2018-10-19T09:49:09Z" finished-at="2018-10-19T09:51:00Z">
+    <test name="Test" duration-ms="109858" started-at="2018-10-22T02:01:37Z" finished-at="2018-10-22T02:03:27Z">
       <class name="com.taochejian.util.TestCar">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.taochejian.util.TestCar@17550481]" name="setUp" is-config="true" duration-ms="10818" started-at="2018-10-19T17:49:09Z" finished-at="2018-10-19T17:49:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.taochejian.util.TestCar@17550481]" name="setUp" is-config="true" duration-ms="11444" started-at="2018-10-22T10:01:37Z" finished-at="2018-10-22T10:01:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pushTencen()[pri:0, instance:com.taochejian.util.TestCar@17550481]" name="pushTencen" duration-ms="96503" started-at="2018-10-19T17:49:20Z" finished-at="2018-10-19T17:50:57Z">
+        <test-method status="PASS" signature="pushTencen()[pri:0, instance:com.taochejian.util.TestCar@17550481]" name="pushTencen" duration-ms="95136" started-at="2018-10-22T10:01:49Z" finished-at="2018-10-22T10:03:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pushTencen -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.taochejian.util.TestCar@17550481]" name="tearDown" is-config="true" duration-ms="3076" started-at="2018-10-19T17:50:57Z" finished-at="2018-10-19T17:51:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.taochejian.util.TestCar@17550481]" name="tearDown" is-config="true" duration-ms="3262" started-at="2018-10-22T10:03:24Z" finished-at="2018-10-22T10:03:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
