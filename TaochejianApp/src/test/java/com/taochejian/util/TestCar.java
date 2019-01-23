@@ -97,7 +97,7 @@ public class TestCar extends TestBase{
 		  driver.findElement(By.id("com.tencent.wework:id/e30")).click();
 		  util.sleep(2);
 		  driver.findElement(By.xpath("//*[contains(@text, '考勤打卡')]")).click();
-		  util.sleep(5);
+		  util.sleep(8);
 		  driver.tap(1, 150, 1850, 1); 
 		  util.sleep(2);
 	  }
