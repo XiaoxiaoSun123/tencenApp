@@ -48,7 +48,7 @@ public class TestCar extends TestBase{
 		  util.sleep(1);
 		  driver.findElement(By.xpath("//*[contains(@text, '请填写密码')]")).sendKeys("hxm_154321!@#");
 		  util.sleep(1);
-		  driver.findElement(By.id("com.tencent.mm:id/cmw")).click();
+		  driver.findElement(By.id("com.tencent.mm:id/cov")).click();
 		  util.sleep(10);
 		 //*****************
 		  driver.findElement(By.xpath("//*[contains(@text, '好车酷酷')]")).click();
