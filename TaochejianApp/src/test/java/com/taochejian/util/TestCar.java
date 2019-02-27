@@ -49,7 +49,7 @@ public class TestCar extends TestBase{
 		  driver.findElement(By.xpath("//*[contains(@text, '请填写密码')]")).sendKeys("hxm_154321!@#");
 		  util.sleep(1);
 		  driver.findElement(By.id("com.tencent.mm:id/cov")).click();
-		  util.sleep(10);
+		  util.sleep(20);
 		 //*****************
 		  driver.findElement(By.xpath("//*[contains(@text, '好车酷酷')]")).click();
 		  log.info("选则好车酷酷");
@@ -94,11 +94,5 @@ public class TestCar extends TestBase{
 		  Mail.sendEmailAttach("你还记得年少时的梦吗", "像一朵永不凋零的花~", tpath);
 		  util.sleep(3);	 
 		  
-		  driver.findElement(By.id("com.tencent.wework:id/e30")).click();
-		  util.sleep(2);
-		  driver.findElement(By.xpath("//*[contains(@text, '考勤打卡')]")).click();
-		  util.sleep(8);
-		  driver.tap(1, 150, 1850, 1); 
-		  util.sleep(2);
 	  }
 }
