@@ -72,9 +72,9 @@ public class TestCar extends TestBase{
 		  util.sleep(10);
 		  Operation.swipeToUp(driver, 980, 1);
 		  util.sleep(2);
-		  Operation.swipeToUp(driver, 500, 1);
+		  Operation.swipeToUp(driver, 600, 1);
 		  util.sleep(5);
-		  driver.tap(1, 200, 1400, 1);
+		  driver.tap(1, 200, 1260, 1);
 		  log.info("点击我的考勤");
 		  util.sleep(5);
 		  driver.findElement(By.xpath("//*[contains(@text, '考勤打卡')]")).click();
@@ -97,4 +97,5 @@ public class TestCar extends TestBase{
 		  util.sleep(3);	 
 		  
 	  }
+
 }
