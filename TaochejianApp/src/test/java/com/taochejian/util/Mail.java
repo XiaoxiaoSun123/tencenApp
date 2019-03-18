@@ -7,6 +7,9 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+
+import org.testng.annotations.Test;
+
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
@@ -28,6 +31,7 @@ public class Mail {
     public static void sendEmailAttach(String subject, String body, String Attachpath) throws UnsupportedEncodingException {
         try {
             Properties props = new Properties();
+         
             props.put("mail.transport.protocol", "smtp" ); 
             props.put("mail.smtp.host", server);
             props.put("mail.smtp.port", String.valueOf(port));
@@ -94,9 +98,10 @@ public class Mail {
     
     //调试
     public static void main(String[] args) throws IOException {
-//			Mail.email_send("app","df df");
+//
         Mail.sendEmailAttach("测试伐木累", "Hello EVBD",  "E:/workspace/ZzTest/screenshot/beyond.jpg");
     }
+    
 }
 
 
