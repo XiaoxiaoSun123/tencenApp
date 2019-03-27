@@ -79,15 +79,20 @@ public class TestCar extends TestBase{
 		  util.sleep(5);
 		  driver.findElement(By.xpath("//*[contains(@text, '考勤打卡')]")).click();
 		  log.info("点击考勤打卡");
-		  util.sleep(6);
+		  util.sleep(8);
 		  
-		  if(util.isElementExist(driver, By.id("com.tencent.wework:id/bbb")) == true){
-			  log.info("点击允许获取地理位置");
-			  driver.findElement(By.id("com.tencent.wework:id/bbb")).click();
-			  util.sleep(10);
-		  }
+//		  if(util.isElementExist(driver, By.id("com.tencent.wework:id/bbb")) == true){
+//			  log.info("点击允许获取地理位置");
+//			  driver.findElement(By.id("com.tencent.wework:id/bbb")).click();
+//			  util.sleep(10);
+//		  }
+		  log.info("点击允许获取地理位置");
+		  driver.tap(1, 800, 1080, 1); 
+		  util.sleep(10);
+		  log.info("点击定位");
 		  driver.tap(1, 740, 1800, 1); 
 		  util.sleep(12);
+		  log.info("点击签到");
 		  driver.tap(1, 150, 1850, 1); 
 		  util.sleep(1);	  
 
