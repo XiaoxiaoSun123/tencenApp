@@ -76,7 +76,7 @@ public class TestCar extends TestBase{
 		  util.sleep(5);
 		  driver.tap(1, 200, 1390, 1);
 		  log.info("点击我的考勤");
-		  util.sleep(5);
+		  util.sleep(10);
 		  driver.findElement(By.xpath("//*[contains(@text, '考勤打卡')]")).click();
 		  log.info("点击考勤打卡");
 		  util.sleep(8);
