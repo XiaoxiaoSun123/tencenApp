@@ -49,7 +49,7 @@ public class TestCar extends TestBase{
 		  driver.findElement(By.xpath("//*[contains(@text, '请填写密码')]")).sendKeys("hxm_154321!@#");
 		  util.sleep(1);
 		  driver.findElement(By.id("com.tencent.mm:id/cov")).click();
-		  util.sleep(20);
+		  util.sleep(25);
 		 //*****************
 		  driver.findElement(By.xpath("//*[contains(@text, '好车酷酷')]")).click();
 		  log.info("选则好车酷酷");
@@ -74,7 +74,7 @@ public class TestCar extends TestBase{
 		  util.sleep(2);
 		  Operation.swipeToUp(driver, 600, 1);
 		  util.sleep(5);
-		  driver.tap(1, 200, 1390, 1);
+		  driver.tap(1, 200, 950, 1);
 		  log.info("点击我的考勤");
 		  util.sleep(10);
 		  driver.findElement(By.xpath("//*[contains(@text, '考勤打卡')]")).click();
