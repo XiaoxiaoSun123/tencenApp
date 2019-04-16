@@ -91,15 +91,15 @@ public class TestCar extends TestBase{
 		  util.sleep(10);
 		  log.info("点击定位");
 		  driver.tap(1, 740, 1800, 1); 
-		  util.sleep(12);
+		  util.sleep(15);
 		  log.info("点击签到");
 		  driver.tap(1, 150, 1850, 1); 
 		  util.sleep(1);	  
 
 		  String tpath = "E:/screen/" + util.screenshot(driver) + ".png";
 		  util.sleep(1);	
-		  Mail.sendEmailAttach("你还记得年少时的梦吗", "像一朵永不凋零的花~", tpath);
-		  util.sleep(3);	 
+//		  Mail.sendEmailAttach("你还记得年少时的梦吗", "像一朵永不凋零的花~", tpath);
+//		  util.sleep(3);	 
 		  
 	  }
 
