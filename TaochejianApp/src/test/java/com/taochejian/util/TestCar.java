@@ -49,7 +49,7 @@ public class TestCar extends TestBase{
 		  util.sleep(1);
 		  driver.findElement(By.xpath("//*[contains(@text, '请填写微信号/QQ号/邮箱')]")).sendKeys("hxm154");
 		  util.sleep(1);
-		  driver.findElement(By.xpath("//*[contains(@text, '请填写密码')]")).sendKeys("hxm_154321123");
+		  driver.findElement(By.xpath("//*[contains(@text, '请填写密码')]")).sendKeys("hxm154321123");
 		  util.sleep(1);
 		  driver.findElement(By.id("com.tencent.mm:id/cqc")).click();
 		  util.sleep(25);
