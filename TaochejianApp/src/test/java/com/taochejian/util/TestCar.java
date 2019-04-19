@@ -30,9 +30,10 @@ public class TestCar extends TestBase{
 	  @SuppressWarnings("deprecation")
 	@Test(enabled = true)
 	  public void pushTencen() throws Exception{
+		  util.sleep(2);
+		  util.setInputAppiumMethod();
 		  util.sleep(5);
 		  log.info("启动程序");
-
 		  driver.tap(1, 910, 1800, 1);
 		  util.sleep(2);
 //		  driver.findElement(By.xpath("//*[contains(@text, '微信登录')]")).click();	
@@ -44,11 +45,13 @@ public class TestCar extends TestBase{
 		  /*
 		   * 获取微信登录
 		   */
+		  
+		  util.sleep(1);
 		  driver.findElement(By.xpath("//*[contains(@text, '请填写微信号/QQ号/邮箱')]")).sendKeys("hxm154");
 		  util.sleep(1);
-		  driver.findElement(By.xpath("//*[contains(@text, '请填写密码')]")).sendKeys("hxm_154321!@#");
+		  driver.findElement(By.xpath("//*[contains(@text, '请填写密码')]")).sendKeys("hxm_154321123");
 		  util.sleep(1);
-		  driver.findElement(By.id("com.tencent.mm:id/cov")).click();
+		  driver.findElement(By.id("com.tencent.mm:id/cqc")).click();
 		  util.sleep(25);
 		 //*****************
 		  driver.findElement(By.xpath("//*[contains(@text, '好车酷酷')]")).click();
@@ -70,11 +73,11 @@ public class TestCar extends TestBase{
 		  driver.tap(1, 800, 1900, 1);
 		  log.info("点击进入工作台");
 		  util.sleep(10);
-		  Operation.swipeToUp(driver, 980, 1);
-		  util.sleep(2);
-		  Operation.swipeToUp(driver, 600, 1);
+//		  Operation.swipeToUp(driver, 980, 1);
+//		  util.sleep(2);
+//		  Operation.swipeToUp(driver, 600, 1);
 		  util.sleep(5);
-		  driver.tap(1, 200, 950, 1);
+		  driver.tap(1, 200, 1080, 1);
 		  log.info("点击我的考勤");
 		  util.sleep(10);
 		  driver.findElement(By.xpath("//*[contains(@text, '考勤打卡')]")).click();
@@ -94,7 +97,8 @@ public class TestCar extends TestBase{
 		  util.sleep(15);
 		  log.info("点击签到");
 		  driver.tap(1, 150, 1850, 1); 
-		  util.sleep(1);	  
+		  util.sleep(2);
+		  driver.tap(1, 260, 1890, 1); 
 
 		  String tpath = "E:/screen/" + util.screenshot(driver) + ".png";
 		  util.sleep(1);	
