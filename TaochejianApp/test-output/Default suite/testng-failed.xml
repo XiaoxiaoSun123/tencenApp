@@ -7,7 +7,6 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testAccountLogin1"/>
           <include name="testAccountLogin"/>
         </methods>
       </class> <!-- com.taochejian.util.TestCar -->

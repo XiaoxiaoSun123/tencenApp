@@ -23,10 +23,10 @@ public class Mail {
 //    static String password = "yixin@99";
 	
   static int port = 25;
-  static String server = "smtp.163.com";
+  static String server = "smtp.sina.com";
   static String from = "欧巴，来米儿了~";
-  static String user = "hxm154@163.com";
-  static String password = "hxm154";
+  static String user = "hxm154@sina.com";
+  static String password = "hxm_154321";
 
     public static void sendEmailAttach(String subject, String body, String Attachpath) throws UnsupportedEncodingException {
         try {
@@ -36,7 +36,8 @@ public class Mail {
             props.put("mail.smtp.host", server);
             props.put("mail.smtp.port", String.valueOf(port));
             props.put("mail.smtp.auth", "true");
-//            props.put("mail.transport.protocol", "smtp" );  
+            props.put("mail.transport.protocol", "smtp" );  
+            props.put("mail.smtp.starttls.enable", "true");
             Transport transport = null;
             Session session = Session.getDefaultInstance(props, null);
             transport = session.getTransport("smtp");
@@ -66,7 +67,7 @@ public class Mail {
             mainPart.addBodyPart(mdp);
 
             //收件人的邮箱地址写这里
-            String email = "hxm154@163.com";
+            String email = "huxiaoming@taoche.com";
 //	            String email="wanghongpeng@yixincapital.com,zhangyanli@yixincapital.com,geshengyan@yixincapital.com,lvyz@yixincapital.com,jialili@yixincapital.com,liyan@yixincapital.com,liyanhua@yixincapital.com,huxiaoming@yixincapital.com,wuweidong@yixincapital.com";
 
             if (email != null && email.trim().length() > 0) {
@@ -98,8 +99,9 @@ public class Mail {
     
     //调试
     public static void main(String[] args) throws IOException {
-//
+
         Mail.sendEmailAttach("测试伐木累", "Hello EVBD",  "E:/workspace/ZzTest/screenshot/beyond.jpg");
+//        Mail.sendEmailAttach("测试伐木累", "Hello EVBD",  "E:/workspace/taochePCauto/report.html");
     }
     
 }
